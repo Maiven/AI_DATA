@@ -1,0 +1,184 @@
+Last login: Sun Mar  7 11:19:48 on console
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % docker
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default
+                           "/Users/chodaehee/.docker")
+  -c, --context string     Name of the context to use to connect to the
+                           daemon (overrides DOCKER_HOST env var and
+                           default context set with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level
+                           ("debug"|"info"|"warn"|"error"|"fatal")
+                           (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default
+                           "/Users/chodaehee/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default
+                           "/Users/chodaehee/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default
+                           "/Users/chodaehee/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  app*        Docker App (Docker Inc., v0.9.1-beta3)
+  builder     Manage builds
+  buildx*     Build with BuildKit (Docker Inc., v0.5.1-docker)
+  config      Manage Docker configs
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  scan*       Docker Scan (Docker Inc., v0.5.0)
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+
+To get more help with docker, check out our guides at https://docs.docker.com/go/guides/
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % docker-machine ip
+zsh: command not found: docker-machine
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % docker run -p 4040:4040 -p 8080:8080 --privileged=true -v $PWD/logs:/logs
+-v $PWD/notebook:/notebook -e ZEPPELIN_NOTEBOOK_DIR='/notebook' -e
+ZEPPELIN_LOG_DIR='/logs' -d apache/zeppelin:0.8.1 /zeppelin/bin/zeppelin.sh
+"docker run" requires at least 1 argument.
+See 'docker run --help'.
+
+Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+
+Run a command in a new container
+zsh: command not found: -v
+zsh: command not found: -d
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % docker run -p 4040:4040 -p 8080
+:8080 --privileged=true -v $PWD/logs:/logs -v $PWD/notebook:/notebook -e ZEPPELI
+N_NOTEBOOK_DIR='/notebook' -e ZEPPELIN_LOG_DIR='/logs' -d apache/zeppelin:0.8.1
+/zeppelin/bin/zeppelin.sh
+Unable to find image 'apache/zeppelin:0.8.1' locally
+0.8.1: Pulling from apache/zeppelin
+7b722c1070cd: Pull complete
+5fbf74db61f1: Pull complete
+ed41cb72e5c9: Pull complete
+7ea47a67709e: Pull complete
+7ba34fd9f5e0: Pull complete
+8f2f09b83582: Pull complete
+40260f0a8f69: Pull complete
+48946af5572c: Pull complete
+8b38acee7e8d: Pull complete
+a806f41d7e41: Pull complete
+7dcaf396dead: Pull complete
+8db355f40e66: Pull complete
+Digest: sha256:a3a90ec1579f5171ebac565e739547b885ed75efc1ec7581128ec1033a4496cb
+Status: Downloaded newer image for apache/zeppelin:0.8.1
+dd0e43109127925e0767d621c8ffcf579fca1ea35bec20967ed81cceffeb79e3
+docker: Error response from daemon: Ports are not available: listen tcp 0.0.0.0:8080: bind: address already in use.
+ERRO[0896] error waiting for container: context canceled
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % docker run -p 4040:4040 -p 8080:8080 --privileged=true -v $PWD/logs:/logs -v $PWD/notebook:/notebook -e ZEPPELIN_NOTEBOOK_DIR='/notebook' -e ZEPPELIN_LOG_DIR='/logs' -d apache/zeppelin:0.8.1 /zeppelin/bin/zeppelin.sh
+5a2641c79bcdd5edf30c036802abc827a6b13023ac99ce728e948e89debc5fd9
+docker: Error response from daemon: Ports are not available: listen tcp 0.0.0.0:8080: bind: address already in use.
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % docker run -p 4040:4040 -p 8080:8080 --privileged=true -v $PWD/logs:/logs -v $PWD/notebook:/notebook -e ZEPPELIN_NOTEBOOK_DIR='/notebook' -e ZEPPELIN_LOG_DIR='/logs' -d apache/zeppelin:0.8.1 /zeppelin/bin/zeppelin.sh
+27a436dd8fba9687a2cb127f24501290876901dfb82ee0962df0dc731abe3a12
+docker: Error response from daemon: Ports are not available: listen tcp 0.0.0.0:8080: bind: address already in use.
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % docker run -p 4040:4040 -p 8081:8081 --privileged=true -v $PWD/logs:/logs -v $PWD/notebook:/notebook -e ZEPPELIN_NOTEBOOK_DIR='/notebook' -e ZEPPELIN_LOG_DIR='/logs' -d apache/zeppelin:0.8.1 /zeppelin/bin/zeppelin.sh
+d14eb0a7aeb5c8ada7f0e54db8a2313dd99d3ef6b2fa3c31027c2372832b1c9e
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % docker-machine ip
+zsh: command not found: docker-machine
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % pip install docker-machine
+ERROR: Could not find a version that satisfies the requirement docker-machine
+ERROR: No matching distribution found for docker-machine
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % curl -L https://github.com/docker/machine/releases/download/v0.16.2/docker-machine-`uname -s`-`uname -m` >/usr/local/bin/docker-machine && \
+  chmod +x /usr/local/bin/docker-machine
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   634    0   634    0     0   1268      0 --:--:-- --:--:-- --:--:--  1265
+100 38.5M  100 38.5M    0     0  1698k      0  0:00:23  0:00:23 --:--:-- 4149k
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % docker-machine ip
+Error: No machine name(s) specified and no "default" machine exists
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % docker-machine create default
+
+Creating CA: /Users/chodaehee/.docker/machine/certs/ca.pem
+Creating client certificate: /Users/chodaehee/.docker/machine/certs/cert.pem
+Running pre-create checks...
+(default) Image cache directory does not exist, creating it at /Users/chodaehee/.docker/machine/cache...
+(default) No default Boot2Docker ISO found locally, downloading the latest release...
+(default) Latest release for github.com/boot2docker/boot2docker is v19.03.12
+(default) Downloading /Users/chodaehee/.docker/machine/cache/boot2docker.iso from https://github.com/boot2docker/boot2docker/releases/download/v19.03.12/boot2docker.iso...
+(default) 0%....10%....20%....30%....40%....50%....60%....70%....80%....90%....100%
+Creating machine...
+(default) Copying /Users/chodaehee/.docker/machine/cache/boot2docker.iso to /Users/chodaehee/.docker/machine/machines/default/boot2docker.iso...
+(default) Creating VirtualBox VM...
+(default) Creating SSH key...
+(default) Starting the VM...
+(default) Check network to re-create if needed...
+(default) Found a new host-only adapter: "vboxnet0"
+(default) Waiting for an IP...
+Waiting for machine to be running, this may take a few minutes...
+Detecting operating system of created instance...
+Waiting for SSH to be available...
+Detecting the provisioner...
+Provisioning with boot2docker...
+Copying certs to the local machine directory...
+Copying certs to the remote machine...
+Setting Docker configuration on the remote daemon...
+Checking connection to Docker...
+Docker is up and running!
+To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env default
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % docker-machine ip
+192.168.99.100
+(base) chodaehee@codestates-CDHui-MacBookPro ~ %

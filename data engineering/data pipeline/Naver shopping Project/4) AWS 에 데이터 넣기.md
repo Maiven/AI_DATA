@@ -82,6 +82,18 @@ def main():
             }
         )
     print(shop_content)
+    
+    for content in shop_content: 
+      sql = "INSERT INTO shop_20 VALUES (%(dates)s, %(ratios)s);"
+
+
+    
+    cursor.executemany(sql, shop_content)
+    conn.commit() 
+    print(cursor.rowcount, "record inserted.")
+
+    sys.exit(0)    
+main()
 
 ```
 

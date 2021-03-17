@@ -1,0 +1,218 @@
+- 주제 : 하둡
+중요 명령어 : (base) chodaehee@codestates-CDHui-MacBookPro sbin % bash /usr/local/Cellar/hadoop/3.3.0/libexec/sbin/start-all.sh
+
+
+Last login: Wed Mar 17 10:01:12 on console
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % spark-shell
+21/03/17 10:43:54 WARN Utils: Your hostname, codestates-CDHui-MacBookPro.local resolves to a loopback address: 127.0.0.1; using 10.160.146.82 instead (on interface en0)
+21/03/17 10:43:54 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+21/03/17 10:43:54 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Spark context Web UI available at http://10.160.146.82:4040
+Spark context available as 'sc' (master = local[*], app id = local-1615945439846).
+Spark session available as 'spark'.
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /___/ .__/\_,_/_/ /_/\_\   version 3.1.1
+      /_/
+
+Using Scala version 2.12.10 (OpenJDK 64-Bit Server VM, Java 1.8.0_282)
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala>
+zsh: suspended  spark-shell
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % pyspark
+Python 3.8.3 (default, Jul  2 2020, 11:26:31)
+[Clang 10.0.0 ] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+21/03/17 10:44:10 WARN Utils: Your hostname, codestates-CDHui-MacBookPro.local resolves to a loopback address: 127.0.0.1; using 10.160.146.82 instead (on interface en0)
+21/03/17 10:44:10 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+21/03/17 10:44:11 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+21/03/17 10:44:12 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /__ / .__/\_,_/_/ /_/\_\   version 3.1.1
+      /_/
+
+Using Python version 3.8.3 (default, Jul  2 2020 11:26:31)
+Spark context Web UI available at http://10.160.146.82:4041
+Spark context available as 'sc' (master = local[*], app id = local-1615945452291).
+SparkSession available as 'spark'.
+>>> python
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'python' is not defined
+>>> version
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'version' is not defined
+>>> print 1+1
+  File "<stdin>", line 1
+    print 1+1
+          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(1+1)?
+>>> print(1+1)
+2
+>>>
+zsh: suspended  pyspark
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % find ~./hadoop
+zsh: no such user or named directory: .
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % find ~/hadoop
+find: /Users/chodaehee/hadoop: No such file or directory
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % find ~/.hadoop
+find: /Users/chodaehee/.hadoop: No such file or directory
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % find ~hadoop
+zsh: no such user or named directory: hadoop
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % find /hadoop
+find: /hadoop: No such file or directory
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % cd hadoop
+cd: no such file or directory: hadoop
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % cd /usr/local/Cellar/
+(base) chodaehee@codestates-CDHui-MacBookPro Cellar % ls
+apache-spark		kubernetes-cli		protobuf
+autoconf		libevent		pybind11
+dyld-headers		libidn2			python@3.9
+elasticsearch		libmpc			rbenv
+elasticsearch-full	libpng			readline
+freetype		libsodium		ruby
+gcc			libunistring		ruby-build
+gdbm			libyaml			scala
+gettext			minikube		scala@2.12
+gh			mpdecimal		scipy
+gmp			mpfr			sqlite
+hadoop			mysql			tcl-tk
+heroku			ncurses			telnet
+heroku-node		node			tmux
+hive			numpy			tomcat@8
+icu4c			openblas		utf8proc
+ipython			openjdk			wget
+isl			openjdk@11		xz
+jenkins			openjdk@8		yarn
+jupyterlab		openssl@1.1		zeromq
+kafka			pandoc			zookeeper
+kibana-full		pkg-config
+krb5			postgresql
+(base) chodaehee@codestates-CDHui-MacBookPro Cellar % cd hadoop
+(base) chodaehee@codestates-CDHui-MacBookPro hadoop % start-all.sh
+zsh: command not found: start-all.sh
+(base) chodaehee@codestates-CDHui-MacBookPro hadoop % bash /usr/local/Cellar/hadoop/1.0.3/libexec/bin/start-all.sh
+
+bash: /usr/local/Cellar/hadoop/1.0.3/libexec/bin/start-all.sh: No such file or directory
+(base) chodaehee@codestates-CDHui-MacBookPro hadoop % ls
+3.3.0
+(base) chodaehee@codestates-CDHui-MacBookPro hadoop % ^[[200~bash /usr/local/
+Cellar/hadoop/1.0.3/libexec/bin/start-all.sh
+zsh: bad pattern: ^[[200~bash
+(base) chodaehee@codestates-CDHui-MacBookPro hadoop % bash /usr/local/Cellar/hadoop/3.3.0/libexec/bin/start-all.sh
+~
+bash: /usr/local/Cellar/hadoop/3.3.0/libexec/bin/start-all.sh: No such file or directory
+zsh: permission denied: /Users/chodaehee
+(base) chodaehee@codestates-CDHui-MacBookPro hadoop % sudo bash /usr/local/Cellar/hadoop/3.3.0/libexec/bin/start-all.sh
+
+Password:
+bash: /usr/local/Cellar/hadoop/3.3.0/libexec/bin/start-all.sh: No such file or directory
+(base) chodaehee@codestates-CDHui-MacBookPro hadoop % cd ~
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % bash /usr/local/Cellar/hadoop/3.3.0/libexec/bin/start-all.sh
+bash: /usr/local/Cellar/hadoop/3.3.0/libexec/bin/start-all.sh: No such file or directory
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % cd /usr/local/Cellar/hadoop/3.3.0/libexec/bin/
+(base) chodaehee@codestates-CDHui-MacBookPro bin % ls
+container-executor	mapred			yarn
+hadoop			oom-listener
+hdfs			test-container-executor
+(base) chodaehee@codestates-CDHui-MacBookPro bin % cd hadoop
+cd: not a directory: hadoop
+(base) chodaehee@codestates-CDHui-MacBookPro bin % ls
+container-executor	mapred			yarn
+hadoop			oom-listener
+hdfs			test-container-executor
+(base) chodaehee@codestates-CDHui-MacBookPro bin % hadoop
+zsh: command not found: hadoop
+(base) chodaehee@codestates-CDHui-MacBookPro bin % ls
+container-executor	mapred			yarn
+hadoop			oom-listener
+hdfs			test-container-executor
+(base) chodaehee@codestates-CDHui-MacBookPro bin % cd ~
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % brew install hadoop
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 3 taps (homebrew/core, homebrew/cask and caskroom/cask).
+==> New Formulae
+lttng-ust
+==> Updated Formulae
+Updated 58 formulae.
+==> New Casks
+around             cinderella         finisher-fluxx     internxt-drive
+around             dnagedcom          finisher-fluxx     remnote
+cinderella         dnagedcom          internxt-drive     remnote
+==> Updated Casks
+Updated 50 casks.
+
+Warning: hadoop 3.3.0 is already installed, it's just not linked.
+To link this version, run:
+  brew link hadoop
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % brew link hadoop
+Linking /usr/local/Cellar/hadoop/3.3.0...
+Error: Could not symlink bin/yarn
+Target /usr/local/bin/yarn
+is a symlink belonging to yarn. You can unlink it:
+  brew unlink yarn
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite hadoop
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run hadoop
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % brew unlink yarn
+Unlinking /usr/local/Cellar/yarn/1.22.10... 2 symlinks removed.
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % brew link hadoop
+Linking /usr/local/Cellar/hadoop/3.3.0... 28 symlinks created.
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % bash /usr/local/Cellar/hadoop/3.3.0/libexec/bin/start-all.sh
+bash: /usr/local/Cellar/hadoop/3.3.0/libexec/bin/start-all.sh: No such file or directory
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % cd /usr/local/Cellar/hadoop/3.3.0/libexec/bin
+(base) chodaehee@codestates-CDHui-MacBookPro bin % ls
+container-executor	mapred			yarn
+hadoop			oom-listener
+hdfs			test-container-executor
+(base) chodaehee@codestates-CDHui-MacBookPro bin % cd..
+zsh: command not found: cd..
+(base) chodaehee@codestates-CDHui-MacBookPro bin % cd ..
+(base) chodaehee@codestates-CDHui-MacBookPro libexec % ls
+bin			hdfs-config.sh		sbin
+etc			libexec			share
+hadoop-config.sh	logs			yarn-config.sh
+hadoop-functions.sh	mapred-config.sh
+(base) chodaehee@codestates-CDHui-MacBookPro libexec % cd sbin
+(base) chodaehee@codestates-CDHui-MacBookPro sbin % ls
+FederationStateStore	refresh-namenodes.sh	stop-balancer.sh
+distribute-exclude.sh	start-all.sh		stop-dfs.sh
+hadoop-daemon.sh	start-balancer.sh	stop-secure-dns.sh
+hadoop-daemons.sh	start-dfs.sh		stop-yarn.sh
+httpfs.sh		start-secure-dns.sh	workers.sh
+kms.sh			start-yarn.sh		yarn-daemon.sh
+mr-jobhistory-daemon.sh	stop-all.sh		yarn-daemons.sh
+(base) chodaehee@codestates-CDHui-MacBookPro sbin % bash /usr/local/Cellar/hadoop/3.3.0/libexec/sbin/start-all.sh
+
+WARNING: Attempting to start all Apache Hadoop daemons as chodaehee in 10 seconds.
+WARNING: This is not a recommended production deployment configuration.
+WARNING: Use CTRL-C to abort.
+Starting namenodes on [localhost]
+localhost: chodaehee@localhost: Permission denied (publickey,password,keyboard-interactive).
+Starting datanodes
+localhost: chodaehee@localhost: Permission denied (publickey,password,keyboard-interactive).
+Starting secondary namenodes [codestates-CDHui-MacBookPro.local]
+codestates-CDHui-MacBookPro.local: chodaehee@codestates-cdhui-macbookpro.local: Permission denied (publickey,password,keyboard-interactive).
+2021-03-17 10:51:58,740 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Starting resourcemanager
+Starting nodemanagers
+localhost: chodaehee@localhost: Permission denied (publickey,password,keyboard-interactive).
+(base) chodaehee@codestates-CDHui-MacBookPro sbin %

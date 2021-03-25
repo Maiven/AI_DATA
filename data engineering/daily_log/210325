@@ -1,0 +1,329 @@
+Last login: Thu Mar 25 14:15:19 on ttys000
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % cd Down
+cd: no such file or directory: Down
+(base) chodaehee@codestates-CDHui-MacBookPro ~ % cd Downloads 
+(base) chodaehee@codestates-CDHui-MacBookPro Downloads % python -m pytest multi.py
+============================= test session starts ==============================
+platform darwin -- Python 3.8.3, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/chodaehee/Downloads
+collected 1 item                                                               
+
+multi.py .                                                               [100%]
+
+============================== 1 passed in 0.00s ===============================
+(base) chodaehee@codestates-CDHui-MacBookPro Downloads % python -m pytest multi.py
+============================= test session starts ==============================
+platform darwin -- Python 3.8.3, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/chodaehee/Downloads
+collected 1 item                                                               
+
+multi.py .                                                               [100%]
+
+============================== 1 passed in 0.01s ===============================
+(base) chodaehee@codestates-CDHui-MacBookPro Downloads % python -m pytest multi.py
+============================= test session starts ==============================
+platform darwin -- Python 3.8.3, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/chodaehee/Downloads
+collected 0 items / 1 error                                                    
+
+==================================== ERRORS ====================================
+__________________________ ERROR collecting multi.py ___________________________
+multi.py:24: in <module>
+    assert_results()
+multi.py:22: in assert_results
+    assert result == [1, 4, 9,  10123]
+E   assert [1, 4, 9, 16, 25, 36, ...] == [1, 4, 9, 10123]
+=========================== short test summary info ============================
+ERROR multi.py - assert [1, 4, 9, 16, 25, 36, ...] == [1, 4, 9, 10123]
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.12s ===============================
+(base) chodaehee@codestates-CDHui-MacBookPro Downloads % python -m pytest multi.py
+============================= test session starts ==============================
+platform darwin -- Python 3.8.3, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/chodaehee/Downloads
+collected 1 item                                                               
+
+multi.py .                                                               [100%]
+
+============================== 1 passed in 0.01s ===============================
+(base) chodaehee@codestates-CDHui-MacBookPro Downloads % python -m pytest multi.py
+============================= test session starts ==============================
+platform darwin -- Python 3.8.3, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/chodaehee/Downloads
+collected 1 item                                                               
+
+multi.py .                                                               [100%]
+
+============================== 1 passed in 0.01s ===============================
+(base) chodaehee@codestates-CDHui-MacBookPro Downloads % python -m pytest multi.py
+============================= test session starts ==============================
+platform darwin -- Python 3.8.3, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/chodaehee/Downloads
+collected 0 items / 1 error                                                    
+
+==================================== ERRORS ====================================
+__________________________ ERROR collecting multi.py ___________________________
+multi.py:25: in <module>
+    assert_results()
+multi.py:23: in assert_results
+    assert result == [1, 4, 9,  10123]
+E   assert [1, 4, 9, 16, 25, 36, ...] == [1, 4, 9, 10123]
+=========================== short test summary info ============================
+ERROR multi.py - assert [1, 4, 9, 16, 25, 36, ...] == [1, 4, 9, 10123]
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.18s ===============================
+(base) chodaehee@codestates-CDHui-MacBookPro Downloads % python -m pytest multi.py
+============================= test session starts ==============================
+platform darwin -- Python 3.8.3, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/chodaehee/Downloads
+collected 0 items / 1 error                                                    
+
+==================================== ERRORS ====================================
+__________________________ ERROR collecting multi.py ___________________________
+multi.py:25: in <module>
+    assert_results()
+multi.py:23: in assert_results
+    assert result == [1, 4, 9,  10123]
+E   assert [1, 4, 9, 16, 25, 36, ...] == [1, 4, 9, 10123]
+=========================== short test summary info ============================
+ERROR multi.py - assert [1, 4, 9, 16, 25, 36, ...] == [1, 4, 9, 10123]
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.11s ===============================
+(base) chodaehee@codestates-CDHui-MacBookPro Downloads % python -m pytest multi.py
+============================= test session starts ==============================
+platform darwin -- Python 3.8.3, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/chodaehee/Downloads
+collected 1 item                                                               
+
+multi.py .                                                               [100%]
+
+============================== 1 passed in 0.01s ===============================
+(base) chodaehee@codestates-CDHui-MacBookPro Downloads % pip install git+https://2b0ed921f6bc297b0d8cfbd96c098cd5920800a5@github.com/aib-contents/pytest-submit-plugin#egg=pytest-submit
+Collecting pytest-submit
+  Cloning https://****@github.com/aib-contents/pytest-submit-plugin to /private/var/folders/mm/tct16mls78x4zqthwnxxlk140000gn/T/pip-install-2gqcgn1b/pytest-submit_06899f7a8653457b85eb7d1735788e0b
+  Running command git clone -q 'https://****@github.com/aib-contents/pytest-submit-plugin' /private/var/folders/mm/tct16mls78x4zqthwnxxlk140000gn/T/pip-install-2gqcgn1b/pytest-submit_06899f7a8653457b85eb7d1735788e0b
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+    Preparing wheel metadata ... done
+Requirement already satisfied: requests~=2.21 in /opt/anaconda3/lib/python3.8/site-packages (from pytest-submit) (2.25.0)
+Collecting boto3>=1.16
+  Downloading boto3-1.17.36-py2.py3-none-any.whl (131 kB)
+     |████████████████████████████████| 131 kB 1.8 MB/s 
+Requirement already satisfied: email-validator>=1.1 in /opt/anaconda3/lib/python3.8/site-packages (from pytest-submit) (1.1.2)
+Requirement already satisfied: pytest>=6.0 in /opt/anaconda3/lib/python3.8/site-packages (from pytest-submit) (6.1.2)
+Collecting pytest-json-report>=1.2
+  Downloading pytest_json_report-1.2.4-py3-none-any.whl (12 kB)
+Collecting botocore<1.21.0,>=1.20.36
+  Downloading botocore-1.20.36-py2.py3-none-any.whl (7.3 MB)
+     |████████████████████████████████| 7.3 MB 8.6 MB/s 
+Collecting s3transfer<0.4.0,>=0.3.0
+  Downloading s3transfer-0.3.6-py2.py3-none-any.whl (73 kB)
+     |████████████████████████████████| 73 kB 4.8 MB/s 
+Collecting jmespath<1.0.0,>=0.7.1
+  Downloading jmespath-0.10.0-py2.py3-none-any.whl (24 kB)
+Requirement already satisfied: urllib3<1.27,>=1.25.4 in /opt/anaconda3/lib/python3.8/site-packages (from botocore<1.21.0,>=1.20.36->boto3>=1.16->pytest-submit) (1.25.11)
+Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in /opt/anaconda3/lib/python3.8/site-packages (from botocore<1.21.0,>=1.20.36->boto3>=1.16->pytest-submit) (2.8.1)
+Requirement already satisfied: dnspython>=1.15.0 in /opt/anaconda3/lib/python3.8/site-packages (from email-validator>=1.1->pytest-submit) (2.1.0)
+Requirement already satisfied: idna>=2.0.0 in /opt/anaconda3/lib/python3.8/site-packages (from email-validator>=1.1->pytest-submit) (2.10)
+Requirement already satisfied: py>=1.8.2 in /opt/anaconda3/lib/python3.8/site-packages (from pytest>=6.0->pytest-submit) (1.9.0)
+Requirement already satisfied: toml in /opt/anaconda3/lib/python3.8/site-packages (from pytest>=6.0->pytest-submit) (0.10.1)
+Requirement already satisfied: iniconfig in /opt/anaconda3/lib/python3.8/site-packages (from pytest>=6.0->pytest-submit) (1.1.1)
+Requirement already satisfied: attrs>=17.4.0 in /opt/anaconda3/lib/python3.8/site-packages (from pytest>=6.0->pytest-submit) (20.3.0)
+Requirement already satisfied: packaging in /opt/anaconda3/lib/python3.8/site-packages (from pytest>=6.0->pytest-submit) (20.7)
+Requirement already satisfied: pluggy<1.0,>=0.12 in /opt/anaconda3/lib/python3.8/site-packages (from pytest>=6.0->pytest-submit) (0.13.1)
+Collecting pytest-metadata
+  Downloading pytest_metadata-1.11.0-py2.py3-none-any.whl (10 kB)
+Requirement already satisfied: six>=1.5 in /opt/anaconda3/lib/python3.8/site-packages (from python-dateutil<3.0.0,>=2.1->botocore<1.21.0,>=1.20.36->boto3>=1.16->pytest-submit) (1.15.0)
+Requirement already satisfied: chardet<4,>=3.0.2 in /opt/anaconda3/lib/python3.8/site-packages (from requests~=2.21->pytest-submit) (3.0.4)
+Requirement already satisfied: certifi>=2017.4.17 in /opt/anaconda3/lib/python3.8/site-packages (from requests~=2.21->pytest-submit) (2020.12.5)
+Requirement already satisfied: pyparsing>=2.0.2 in /opt/anaconda3/lib/python3.8/site-packages (from packaging->pytest>=6.0->pytest-submit) (2.4.7)
+Building wheels for collected packages: pytest-submit
+  Building wheel for pytest-submit (PEP 517) ... done
+  Created wheel for pytest-submit: filename=pytest_submit-1.1.1-py3-none-any.whl size=6223 sha256=f929e9f95420c7f69dddc59d0bccef1d264fcffe9e8bf2570ce0256458cc0ea8
+  Stored in directory: /private/var/folders/mm/tct16mls78x4zqthwnxxlk140000gn/T/pip-ephem-wheel-cache-a3wnletu/wheels/6b/04/72/20f3172a8e9face361c30314f8b5eb2cf7e85602fd67d64da4
+Successfully built pytest-submit
+Installing collected packages: jmespath, botocore, s3transfer, pytest-metadata, pytest-json-report, boto3, pytest-submit
+Successfully installed boto3-1.17.36 botocore-1.20.36 jmespath-0.10.0 pytest-json-report-1.2.4 pytest-metadata-1.11.0 pytest-submit-1.1.1 s3transfer-0.3.6
+(base) chodaehee@codestates-CDHui-MacBookPro Downloads % python -m pytest multi.py --submit
+============================= test session starts ==============================
+platform darwin -- Python 3.8.3, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/chodaehee/Downloads
+plugins: json-report-1.2.4, submit-1.1.1, metadata-1.11.0
+collected 1 item                                                               
+
+multi.py .                                                               [100%]===================================
+    GitHub 인증을 통해 사용자를 확인하는 과정을 진행합니다.
+    다음 여덟자리 코드를 웹브라우저에 입력하세요.
+    +-------------------+
+    |     221D-9F85     |
+    +-------------------+
+    이후 진행되는 로그인 과정이 완료되면 
+    Congratulations, you're all set! 메시지가 나옵니다.
+    
+    
+                                       
+
+===================================
+Congratulations, you're all set!
+error while retrieving assignment name
+[Errno 2] No such file or directory: '/Users/chodaehee/Downloads/setup.cfg'
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/anaconda3/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/opt/anaconda3/lib/python3.8/site-packages/pytest/__main__.py", line 5, in <module>
+    raise SystemExit(pytest.console_main())
+  File "/opt/anaconda3/lib/python3.8/site-packages/_pytest/config/__init__.py", line 187, in console_main
+    code = main()
+  File "/opt/anaconda3/lib/python3.8/site-packages/_pytest/config/__init__.py", line 164, in main
+    ret = config.hook.pytest_cmdline_main(
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/callers.py", line 208, in _multicall
+    return outcome.get_result()
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/opt/anaconda3/lib/python3.8/site-packages/_pytest/main.py", line 306, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "/opt/anaconda3/lib/python3.8/site-packages/_pytest/main.py", line 294, in wrap_session
+    config.hook.pytest_sessionfinish(
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/callers.py", line 203, in _multicall
+    gen.send(outcome)
+  File "/opt/anaconda3/lib/python3.8/site-packages/_pytest/terminal.py", line 794, in pytest_sessionfinish
+    outcome.get_result()
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/opt/anaconda3/lib/python3.8/site-packages/pytest_submit/plugin.py", line 107, in pytest_sessionfinish
+    submit_report(user, json_report)
+  File "/opt/anaconda3/lib/python3.8/site-packages/pytest_submit/plugin.py", line 58, in submit_report
+    assignment, assignment_name = get_assignment_name(user["id"])
+  File "/opt/anaconda3/lib/python3.8/site-packages/pytest_submit/plugin.py", line 50, in get_assignment_name
+    return assignment_name, f"{assignment_name}/{user_id}"
+UnboundLocalError: local variable 'assignment_name' referenced before assignment
+(base) chodaehee@codestates-CDHui-MacBookPro Downloads % 
+(base) chodaehee@codestates-CDHui-MacBookPro Downloads % 
+(base) chodaehee@codestates-CDHui-MacBookPro Downloads % python -m pytest multi.py --submit
+============================= test session starts ==============================
+platform darwin -- Python 3.8.3, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/chodaehee/Downloads
+plugins: json-report-1.2.4, submit-1.1.1, metadata-1.11.0
+collected 1 item                                                               
+
+multi.py .                                                               [100%]===================================
+Congratulations, you're all set!
+해당 디바이스의 aib-contents에 대한 79567954는 인증되어 있기에 제출을 진행합니다.
+error while retrieving assignment name
+[Errno 2] No such file or directory: '/Users/chodaehee/Downloads/setup.cfg'
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/anaconda3/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/opt/anaconda3/lib/python3.8/site-packages/pytest/__main__.py", line 5, in <module>
+    raise SystemExit(pytest.console_main())
+  File "/opt/anaconda3/lib/python3.8/site-packages/_pytest/config/__init__.py", line 187, in console_main
+    code = main()
+  File "/opt/anaconda3/lib/python3.8/site-packages/_pytest/config/__init__.py", line 164, in main
+    ret = config.hook.pytest_cmdline_main(
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/callers.py", line 208, in _multicall
+    return outcome.get_result()
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/opt/anaconda3/lib/python3.8/site-packages/_pytest/main.py", line 306, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "/opt/anaconda3/lib/python3.8/site-packages/_pytest/main.py", line 294, in wrap_session
+    config.hook.pytest_sessionfinish(
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/callers.py", line 203, in _multicall
+    gen.send(outcome)
+  File "/opt/anaconda3/lib/python3.8/site-packages/_pytest/terminal.py", line 794, in pytest_sessionfinish
+    outcome.get_result()
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "/opt/anaconda3/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/opt/anaconda3/lib/python3.8/site-packages/pytest_submit/plugin.py", line 107, in pytest_sessionfinish
+    submit_report(user, json_report)
+  File "/opt/anaconda3/lib/python3.8/site-packages/pytest_submit/plugin.py", line 58, in submit_report
+    assignment, assignment_name = get_assignment_name(user["id"])
+  File "/opt/anaconda3/lib/python3.8/site-packages/pytest_submit/plugin.py", line 50, in get_assignment_name
+    return assignment_name, f"{assignment_name}/{user_id}"
+UnboundLocalError: local variable 'assignment_name' referenced before assignment
+(base) chodaehee@codestates-CDHui-MacBookPro Downloads % python -m pytest multi.py
+============================= test session starts ==============================
+platform darwin -- Python 3.8.3, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/chodaehee/Downloads
+plugins: json-report-1.2.4, submit-1.1.1, metadata-1.11.0
+collected 2 items                                                              
+
+multi.py ..                                                              [100%]
+
+============================== 2 passed in 0.01s ===============================
+(base) chodaehee@codestates-CDHui-MacBookPro Downloads % python -m pytest multi.py
+============================= test session starts ==============================
+platform darwin -- Python 3.8.3, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/chodaehee/Downloads
+plugins: json-report-1.2.4, submit-1.1.1, metadata-1.11.0
+collected 2 items                                                              
+
+multi.py .F                                                              [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_assert_results ______________________________
+
+    def test_assert_results():
+      result = 	test()
+      assert result == [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+>     assert result == [1, 4, 9,  10123]
+E     assert [1, 4, 9, 16, 25, 36, ...] == [1, 4, 9, 10123]
+E       At index 3 diff: 16 != 10123
+E       Left contains 6 more items, first extra item: 25
+E       Use -v to get the full diff
+
+multi.py:23: AssertionError
+---------------------------- Captured stdout setup -----------------------------
+Starting test
+--------------------------- Captured stdout teardown ---------------------------
+Ending test
+=========================== short test summary info ============================
+FAILED multi.py::test_assert_results - assert [1, 4, 9, 16, 25, 36, ...] == [...
+========================= 1 failed, 1 passed in 0.13s ==========================
+(base) chodaehee@codestates-CDHui-MacBookPro Downloads % python -m pytest multi.py
+============================= test session starts ==============================
+platform darwin -- Python 3.8.3, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/chodaehee/Downloads
+plugins: json-report-1.2.4, submit-1.1.1, metadata-1.11.0
+collected 1 item                                                               
+
+multi.py .                                                               [100%]
+
+============================== 1 passed in 0.01s ===============================
+(base) chodaehee@codestates-CDHui-MacBookPro Downloads % 

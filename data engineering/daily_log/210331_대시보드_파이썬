@@ -6,3 +6,7 @@ date 관련,날짜관련 데이터는 대시보드에서 필수일까?
 하둡 데이터 노드(Datanode), 라이브 노드(live node)
 
 하둡 : https://tariat.tistory.com/492
+하둡 오류 체크 : http://alphagong.blogspot.com/2016/10/hadoop-271-multi-node-cluster-setup.html
+
+hadoop - 하둡 : 슬레이브에서 데이터 노드가 시작되지 않음
+ : https://pythonq.com/so/hadoop/1708660

@@ -1,0 +1,60 @@
+하둡3에 대해서 라이브노드 보이게끔 설치를 해보자.
+뭐가 제대로 된 것인지는 알 수 없지만 일단 설치를 시도해보자.
+hadoop : https://rap0d.github.io/tip/2019/10/01/mac_hadoop_in_mac/
+
+hadoop 수정사항 : https://bluebluy.tistory.com/entry/%ED%95%98%EB%91%A1-%EC%84%A4%EC%A0%95%ED%8C%8C%EC%9D%BC
+하둡라이브노드 힌트 : https://m.blog.naver.com/PostView.nhn?blogId=tkddlf4209&logNo=221011780131&proxyReferer=https:%2F%2Fwww.google.com%2F
+
+operation not permitted 메시지 대응, 운영 권한 : https://osxdaily.com/2018/10/09/fix-operation-not-permitted-terminal-error-macos/
+
+jdk 설정 : https://blog.acu.pe.kr/56
+jdk 설정(macOS Java 환경변수(PATH) 설정 방법) : https://whitepaek.tistory.com/28
+
+
+hadoop jar /opt/hadoop/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.0.jar wordcount /opt/hadoop/hadoop/etc/hadoop/hadoop-env.sh wordcount_output
+맥 하둡3 설치 : https://key4920.github.io/p/mac-os%EC%97%90-%ED%95%98%EB%91%A1hadoop-%EC%84%A4%EC%B9%98/
+
+하둡 실행 오류 : I installed Hadoop on the server running CentOs. As I run start-dfs.shor stop-dfs.sh I got the following error :
+
+WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+
+대응 : I am using Hadoop 2.2.0 Version. In hadoop-env.sh I have also added these two environment variables.  
+
+export HADOOP_OPTS="$HADOOP_OPTS -Djava.library.path=/usr/local/hadoop/lib/"
+
+export HADOOP_COMMON_LIB_NATIVE_DIR="/usr/local/hadoop/lib/native/"
+
+출처 : https://intellipaat.com/community/312/hadoop-unable-to-load-native-hadoop-library-for-your-platform-warning?show=312#q312
+
+하이브 설치 및 실행 : 
+하이브를 위한 설정: https://wannabe-gosu.tistory.com/54
+
+mysql 설치 및  설정 : https://whitepaek.tistory.com/16
+mysql grant error : https://javagwanjin.tistory.com/entry/MYSQL-%EC%9C%A0%EC%A0%80%EB%A7%8C%EB%93%A4%EA%B8%B0
+
+grant all privileges on metastore.* to hiveuser@localhost;
+
+mysql까지는 성공, 하이브는 실패
+아래처럼 나옴
+mysql> show tables;
+ERROR 1046 (3D000): No database selected
+mysql> use metastore;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++-------------------------------+
+| Tables_in_metastore           |
++-------------------------------+
+| AUX_TABLE                     |
+| BUCKETING_COLS                |
+| CDS                           |
+| COLUMNS_V2          
+
+
+hive(하이브) 실행 에러 : https://lygon55555.medium.com/hive-%EC%8B%A4%ED%96%89%EC%9D%B4-%EC%95%88-%EB%90%A0-%EB%95%8C-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95-6e4bfbb3dcd9
+https://www.programmersought.com/article/84056388613/
+/usr/local/Cellar/hadoop/3.3.0/libexec/etc/hadoop/hadoop-env.sh 파일에 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home 추가
+Mac OS에 스파크3 설치 및 pyspark 시작 : https://key4920.github.io/p/mac-os%EC%97%90-%EC%8A%A4%ED%8C%8C%ED%81%AC3-%EC%84%A4%EC%B9%98-%EB%B0%8F-pyspark-%EC%8B%9C%EC%9E%91/
+(pyspark 실행 내역 : http://localhost:8888/notebooks/210401_spark.ipynb)

@@ -3,4 +3,6 @@
 대시보드를 분리해보자
 데이터가 없다면 있는데이터로 차트를 구성해본다.
 대시보드에서 어려운 점은 갖고 있는 데이터로 무언가를 구성한다.
-
+아마존 레드시프트 Amazon Redshift
+가장 빠르고 가장 널리 사용되는 클라우드 데이터 웨어하우스에서 모든 데이터 분석 
+https://aws.amazon.com/ko/redshift/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc

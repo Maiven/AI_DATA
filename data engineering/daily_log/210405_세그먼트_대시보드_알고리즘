@@ -6,3 +6,13 @@
 아마존 레드시프트 Amazon Redshift
 가장 빠르고 가장 널리 사용되는 클라우드 데이터 웨어하우스에서 모든 데이터 분석 
 https://aws.amazon.com/ko/redshift/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc
+
+
+airflow : https://medium.com/@aldente0630/%EC%95%84%ED%8C%8C%EC%B9%98-%EC%97%90%EC%96%B4%ED%94%8C%EB%A1%9C%EC%9A%B0%EB%A1%9C-%EC%9E%91%EC%97%85%ED%9D%90%EB%A6%84-%EA%B0%9C%EB%B0%9C%ED%95%B4%EB%B3%B4%EA%B8%B0-8f3653d749b4
+
+DAG(Directed Acyclic Graph)
+그래프와 데이터 엔지니어닝
+트리와 데이터 사이언스
+데이터 분야에서 알고리즘이 어떻게 기반이 되어 활용되었는지 알 수 있다.
+
+

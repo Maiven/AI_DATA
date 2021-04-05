@@ -16,6 +16,7 @@ DAG(Directed Acyclic Graph)
 데이터 분야에서 알고리즘이 어떻게 기반이 되어 활용되었는지 알 수 있다.
 
 
-mysql reference에 대해서 익히자.
+mysql reference에 대해서 익히자. 레퍼런스뿐만아니라 릴리즈노트를 숙지하는 것도 중요하다.
 https://dev.mysql.com/doc/refman/8.0/en/
 
+https://dev.mysql.com/doc/relnotes/mysql/8.0/en/

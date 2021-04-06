@@ -6,3 +6,11 @@
 sql고급은 무엇인가?
 
 DAG 알고리즘
+
+실제그래프 알고리즘이 기반으로 많이 활용되는 알고리즘이다.
+
+쿠버네티스 : https://deview.kr/data/deview/session/attach/1100_T3_%EC%9D%B4%EC%9B%85%EA%B7%9C_Kubernetes%EB%A5%BC%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%ED%9A%A8%EC%9C%A8%EC%A0%81%EC%9D%B8%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%20_Airflow%20on%20Kubernetes%20VS%20Airflow%20Kubernetes%20Executor_.pdf
+카프카의 기본 자료구조는?
+에어플로우는 공통의 소스코드에 적용시키는 경우에만 사용되고 나머지의 경우는 사용되지 않는게 좋을듯
+
+직접 하둡이나 클러스터를 조정할게 아니면 사용하지 
